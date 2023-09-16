@@ -1,27 +1,26 @@
-# React + TypeScript + Vite
+#### steps to dev server
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- clone repo
+`git clone --recurse-submodules https://github.com/mohdfahad12328/fliplot.git`
 
-Currently, two official plugins are available:
+- for waveform viewer server
+  - change directory to fliplot
+    `cd fliplot`
+  - install npm packages
+    `npm i`
+  - bundle js
+    `npx webpack --mode=development --watch`
+  - create and activate a new python virtual-environment (optional):
+    `python3 -m  virtualenv .venv` or `python3 -m  venv .venv`
+  - activate python virtual-environment
+    `./.venv/bin/activate` or `./venv/Scripts/activate`
+  - install flask server
+    `pip install flask`
+  - run dev server 
+    `python3 flask_app.py`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- for verilog-ide
+  - install npm packages
+    `npm i`
+  - run dev server
+    `npm run dev`
