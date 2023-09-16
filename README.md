@@ -13,7 +13,7 @@
   - create and activate a new python virtual-environment (optional):
     `python3 -m  virtualenv .venv` or `python3 -m  venv .venv`
   - activate python virtual-environment
-    `./.venv/bin/activate` or `./venv/Scripts/activate`
+    `./.venv/bin/activate` or `./.venv/Scripts/activate`
   - install flask server
     `pip install flask`
   - run dev server 
